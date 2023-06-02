@@ -8,7 +8,57 @@
 </head>
 <body>
   <script type="text/javascript">
+
+    // Hello World
     console.log('こんにちは、世界！');
+
+    // 文字列リテラル エスケープ処理
+    console.log('He\'s a "Good" player!!\b aaa \f aaa \n aaa');
+
+    // テンプレート文字列
+    let name = "松原";
+    let str = `こんにちは、${name}さん。
+    今日も良い天気ですね！`;
+    console.log(str);
+
+    // 配列
+    let data = ['JavaScript','Python','PHP','Ruby','Perl'];
+    console.log(data[0]);
+
+    // 配列の入れ子化
+    let dataNest = [
+      ['JavaScript','JS'],
+      ['Python','PY'],
+      ['Ruby','RB'],
+    ]
+    console.log(dataNest[2][1]);
+
+    // オブジェクトリテラル
+    let book = {
+      title: 'JavaScript本格入門',
+      price: 2980,
+      publisher: '技術評論社',
+    };
+    console.log(book.title);
+    console.log(book['title']);
+
+    // オブジェクトの入れ子
+    let book02 = {
+      title: 'JavaScript本格入門',
+      author: {
+        name: '山田',
+        address: '住所',
+      },
+      price: 2980,
+    }
+    console.log(book02.author.name);
+    console.log(book02['author']['name']);
+
+    // undefined と null のちがい
+    // 意図した空を表すには null、 そうでない場合は undefind
+
+    
+
   </script>
 </body>
 </html>
