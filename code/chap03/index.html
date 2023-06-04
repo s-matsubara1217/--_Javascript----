@@ -91,11 +91,66 @@
 
 
     /** 入れ子となったオブジェクトを分解する **/
+    /*
     let book = {
       title: 'タイトル',
       publish: '出版社',
-      price: 2680
-    }
+      price: 2680,
+      other: {
+        keywd: 'Java SE 18',
+        logo: 'logo.jpg',
+      },
+    };
+
+    let {title,other,other:{keywd}} = book;
+    console.log(title);
+    console.log(other);
+    console.log(keywd);
+    */
+
+
+    /* 変数の別名を指定する */
+    /*
+    let book = {
+      title: 'タイトル',
+      publisher: '出版社',
+    };
+
+    let {title:subject,publisher:company} = book;
+    console.log(subject); // タイトル
+    console.log(company); // 出版社
+    */
+
+
+    /* 「...」演算子で残りのプロパティを束ねる */
+    /*
+    let book = {
+      title: 'タイトル',
+      publisher: '出版社',
+      price: 2680,
+    };
+
+    let {title,...rest} = book;
+    console.log(title);
+    console.log(rest);
+    */
+
+
+    /* 宣言と切り離して分割代入する */
+    let book = {
+      title: 'タイトル',
+      publisher: '出版社',
+      price: 2680,
+    };
+
+    let price,title,memo;
+    ({price,title,memo = 'x'} = book);
+    console.log(price);
+    console.log(title);
+    console.log(memo);
+    // オブジェクトの分割代入では、前後に丸括弧が必要になる。
+
+
 
 
 
