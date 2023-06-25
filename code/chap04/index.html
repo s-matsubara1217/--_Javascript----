@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chap04.スクリプトの基本構造を理解する - 制御構文</title>
+</head>
+<body>
+  <script>
+
+    /** 制御構文とは **/
+    // 構造化プログラミング
+    // ①順次
+    // ②選択
+    // ③反復
+
+    /** 条件分岐 **/
+    /* if命令 */
+    // let x = 15;
+    // if(x>=10) {
+    //   console.log('変数xは10以上です。');
+    // } else {
+    //   console.log('変数xは10未満です。');
+    // }
+    // console.log(x>=10 ? '変数xは10以上です。' : '変数xは10未満です。');
+
+    // let x = 30;
+    // if(x>=20) {
+    //   console.log('変数xは20以上です。');
+    // } else if (x>=10) {
+    //   console.log('変数xは10以上です。');
+    // } else {
+    //   console.log('変数xは10未満です。');
+    // }
+
+    let x = 30;
+    if(x>=10) {
+      if(x>=20) {
+        console.log('変数xは20以上です。');
+      } else {
+        console.log('変数xは10以上20未満です。');
+      }
+    } else {
+      console.log('変数xは10未満です。');
+    }
+
+
+  </script>
+</body>
+</html>
