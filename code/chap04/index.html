@@ -205,15 +205,41 @@
     //   }
     // }
 
-    label2: {
-      label1: {
-        console.log(("label1 block"));
-        break label2;
-      }
-      console.log('label2 block');
+    // label2: {
+    //   label1: {
+    //     console.log(("label1 block"));
+    //     break label2;
+    //   }
+    //   console.log('label2 block');
+    // }
+
+    // label: {
+    //   console.log('Block start!');
+    //   (function() {
+    //     break label;
+    //   })();
+    //   console.log(('Block end'));
+    // }
+
+
+    /* try...catch...finally命令（例外を処理する） */
+    // try {
+    //   例外が発生するかもしれない命令（群）
+    // } catch(例外情報を受け取る変数) {
+    //   例外が発生したときに実行される命令（群）
+    // } finally {
+    //   例外の有無に関わらず最終的に実行される命令（群）
+    // }
+
+    let i = 1;
+    try {
+      i=i*j;
+    } catch(e) {
+      console.log(`${e.name}:${e.message}`);
+      console.log(e);
+    } finally {
+      console.log('処理は完了しました。');
     }
-
-
 
 
 
