@@ -231,14 +231,37 @@
     //   例外の有無に関わらず最終的に実行される命令（群）
     // }
 
-    let i = 1;
+    // let i = 1;
+    // try {
+    //   i=i*j;
+    // } catch(e) {
+    //   // console.log(`${e.name}:${e.message}`);
+    //   console.log(e);
+    // } finally {
+    //   console.log('処理は完了しました。');
+    // }
+
+    // const PATH = '/hoge/foo.dat';
+    // openFile(PATH);
+    // try {
+    //   write(PATH);
+    // } finally {
+    //   closeFile(PATH);
+    // }
+
+
+    /* throw命令（例外をスローする） */
+    let x = 1;
+    let y = 0;
+
     try {
-      i=i*j;
+      if(y===0) {
+        throw new Error('0で除算しようとしました');
+      }
+      let z = x/y;
     } catch(e) {
-      console.log(`${e.name}:${e.message}`);
+      console.log(e.message);
       console.log(e);
-    } finally {
-      console.log('処理は完了しました。');
     }
 
 
