@@ -251,18 +251,24 @@
 
 
     /* throw命令（例外をスローする） */
-    let x = 1;
-    let y = 0;
+    // let x = 1;
+    // let y = 0;
 
-    try {
-      if(y===0) {
-        throw new Error('0で除算しようとしました');
-      }
-      let z = x/y;
-    } catch(e) {
-      console.log(e.message);
-      console.log(e);
-    }
+    // try {
+    //   if(y===0) {
+    //     throw new Error('0で除算しようとしました');
+    //   }
+    //   let z = x/y;
+    // } catch(e) {
+    //   console.log(e.message);
+    //   console.log(e);
+    // }
+
+    /* debugger命令（デバッガーを起動する） */
+    let title = 'タイトル01';
+    debugger;
+    title = 'タイトル02';
+    // ブレイクポイント：実行中にスクリプトを一時停止させるための機能
 
 
 
