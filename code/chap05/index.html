@@ -74,9 +74,26 @@
 
 
     /* 部分文字列を取得する */
-    let str = 'WINGSプロジェクト';
+    // let str = 'WINGSプロジェクト';
+    // console.log(str.charAt(5));
+    // console.log(str.substring(5));
+    // console.log(str.substring(5,8));
+    // console.log(str.slice(5));
+    // console.log(str.slice(5,8));
+    // console.log(str.substring(8,5));
+    // console.log(str.slice(8,5));
+    // console.log(str.substring(5,-2));
+    // console.log(str.slice(5,-2));
 
-    console.log(str.charAt(0));
+
+    /* 文字列を検索する（ある文字列の中で、特定の部分文字列が登場する位置を検索） */
+    // indexOf
+    // lastIndexOf
+    let str = 'にわにはにわにわとりがいる';
+    console.log(str.indexOf('にわ'));
+    console.log(str.lastIndexOf('にわ'));
+    console.log(str.indexOf('にど'));
+    console.log(str.indexOf('にわ'));
 
 
 
