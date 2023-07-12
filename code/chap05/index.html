@@ -116,7 +116,20 @@
 
 
     /* 文字列に特定の部分文字列が含まれるかを判定する */
-    includes（部分一致）
+    // includes（部分一致）
+    // startsWith（前方一致）
+    // endsWith（後方一致）
+    let str = 'うりうりがうりうりにきてうりうりのこし';
+
+    // console.log(str.includes('うり'));
+    // console.log(str.indexOf('うり')>-1);
+    // console.log(str.indexOf('うり')>-1);
+    // console.log(str.startsWith('うり'));
+    // console.log(str.endsWith('うり'));
+    console.log(str.includes('うり',10));
+    console.log(str.startsWith('り',3));
+    console.log(str.endsWith('うり',2));
+
 
   </script>
   
