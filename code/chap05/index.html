@@ -119,16 +119,41 @@
     // includes（部分一致）
     // startsWith（前方一致）
     // endsWith（後方一致）
-    let str = 'うりうりがうりうりにきてうりうりのこし';
+    // let str = 'うりうりがうりうりにきてうりうりのこし';
 
     // console.log(str.includes('うり'));
     // console.log(str.indexOf('うり')>-1);
     // console.log(str.indexOf('うり')>-1);
     // console.log(str.startsWith('うり'));
     // console.log(str.endsWith('うり'));
-    console.log(str.includes('うり',10));
-    console.log(str.startsWith('り',3));
-    console.log(str.endsWith('うり',2));
+    // console.log(str.includes('うり',10));
+    // console.log(str.startsWith('り',3));
+    // console.log(str.endsWith('うり',2));
+
+    /* 文字列の前後から空白を除去する */
+    // trim
+    // trimStart
+    // trimEnd
+    // let str = '　 WINGSプロジェクト \n\t\n';
+    // console.log(`「${str.trim()}」`);
+    // console.log(`「${str.trimStart()}」`);
+    // console.log(`「${str.trimEnd()}」`);
+
+    /* 文字列を置き換える */
+    // replace
+    // replaceAll
+    // let str ='にわにはにわにわとりがいる';
+    // console.log(str.replace('にわ','二羽'));
+    // console.log(str.replaceAll('にわ','二羽'));
+    // console.log(str.split('にわ').join('二羽'));
+    // console.log(str.split('にわ'));
+
+    /* 文字列を分割する */
+    let str = 'みかん\tりんご\tぶどう\t';
+    let str2 = '叱られて';
+
+    console.log(str.split('\t'));
+    console.log(str.split('\n'));
 
 
   </script>
