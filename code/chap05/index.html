@@ -186,14 +186,42 @@
 
       /* 文字列をUnicode正規化する */
       // normalizeメソッド
-      let type = ['NFD', 'NFC', 'NFKD', 'NFKC'];
-      let list = ['ギガ', 'キ゛カ゛', 'ｷﾞｶﾞ', ''];
-      for(let t of type) {
-        console.log(`◾️${t}`);
-        for(let l of list) {
-          console.log(``);
-        }
-      }
+      // let type = ['NFD', 'NFC', 'NFKD', 'NFKC'];
+      // let list = ['ギガ', 'キ゛カ゛', 'ｷﾞｶﾞ', ''];
+      // for(let t of type) {
+      //   console.log(`◾️${t}`);
+      //   for(let l of list) {
+      //     console.log(`${l} => ${l.normalize(t)}`);
+      //   }
+      // }
+
+
+      /** Numberオブジェクト（数値リテラルを操作する) **/
+      /* 最大・最小の整数値 */
+      // MAX_SAFE_INTEGER
+      // MIN_SAFE_INTEGER
+      // console.log(Number.MAX_SAFE_INTEGER);
+      // console.log(Number.MAX_SAFE_INTEGER + 1);
+      // console.log(Number.MAX_SAFE_INTEGER + 2);
+      // console.log(BigInt(Number.MAX_SAFE_INTEGER + 2n));
+      // console.log(10n + 2);
+      // console.log(10n / 3n);
+      // console.log(10n === 10);
+
+      /* 数値形式を変換する */
+      // let num1 = 255;
+      // console.log(num1.toString(16));
+      // console.log(num1.toString(8));
+      
+      // let num2 = 123.45678
+      // console.log(num2.toExponential(2));
+      // console.log(num2.toFixed(3));
+      // console.log(num2.toFixed(7));
+      // console.log(num2.toPrecision(10));
+      // console.log(num2.toPrecision(5));
+
+      let num = 1234.567;
+      
 
 
 
