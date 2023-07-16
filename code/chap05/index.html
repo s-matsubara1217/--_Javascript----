@@ -186,7 +186,14 @@
 
       /* 文字列をUnicode正規化する */
       // normalizeメソッド
-      let type = []
+      let type = ['NFD', 'NFC', 'NFKD', 'NFKC'];
+      let list = ['ギガ', 'キ゛カ゛', 'ｷﾞｶﾞ', ''];
+      for(let t of type) {
+        console.log(`◾️${t}`);
+        for(let l of list) {
+          console.log(``);
+        }
+      }
 
 
 
