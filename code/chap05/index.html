@@ -364,8 +364,44 @@
       // console.log(dt.toLocaleString());
 
       // 日付,時刻値を加算,減算する
+      // let dt = new Date(2022,11,15,20,40);
+      // let dt = new Date();
+      // console.log(dt);
+      // dt.setMonth(dt.getMonth() + 3);
+      // console.log(dt);
+      // dt.setDate(dt.getDate() - 20);
+      // console.log(dt);
+      // let dat = new Date(2022,4,15,11,40);
+      // let dat = new Date();
+      // console.log(dat);
+      // dat.setMonth(dat.getMonth()+1);
+      // dat.setDate(0);
+      // console.log(dat);
 
+      // 日付,時刻の差を求める
+      // let dt1 = new Date(2022,10,15);
+      // let dt2 = new Date(2022,11,20);
+      // let diff = (dt2.getTime() - dt1.getTime())/(1000*60*60*24);
+      // console.log(`${diff}日の差があります。`);
 
+      // 日付,時刻値を文字列に変換したい
+      // let dt = new Date(2022,11,4,20,7,15,368);
+      // console.log(dt.toLocaleString());
+      // console.log(dt.toLocaleDateString());
+      // console.log(dt.toLocaleTimeString());
+      // console.log(dt.toISOString());
+      // console.log(dt.toDateString());
+      // console.log(dt.toJSON());
+
+      let dt = newDate(2022,11,4,20,7,15,368);
+      let fmt = new Intl.DateTimeFormat('ja-JP', {
+        year: 'numeric',
+        month: 'short',
+        day: '2-digit',
+        weekday: 'long',
+        hour12: true,
+        hour: '2-digit',
+      })
 
   </script>
   
