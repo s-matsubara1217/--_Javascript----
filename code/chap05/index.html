@@ -32,12 +32,12 @@
     // オブジェクト名.プロパティ名
     // オブジェクト名.メソッド名
     // console.log(Math.abs(x - y) , EPSILON);
-    
-    
+
+
     /* 組み込みオブジェクト（ビルトイン） */
     // JavaScriptに標準で組み込まれている
     // console.log(Error);
-    
+
     // let str = 'こんにちは';
     // console.log(str.length);
 
@@ -212,7 +212,7 @@
       // let num1 = 255;
       // console.log(num1.toString(16));
       // console.log(num1.toString(8));
-      
+
       // let num2 = 123.45678
       // console.log(num2.toExponential(2));
       // console.log(num2.toFixed(3));
@@ -393,17 +393,32 @@
       // console.log(dt.toDateString());
       // console.log(dt.toJSON());
 
-      let dt = newDate(2022,11,4,20,7,15,368);
-      let fmt = new Intl.DateTimeFormat('ja-JP', {
-        year: 'numeric',
-        month: 'short',
-        day: '2-digit',
-        weekday: 'long',
-        hour12: true,
-        hour: '2-digit',
-      })
+      // let dt = new Date(2022,11,4,20,7,15,368);
+      // let fmt = new Intl.DateTimeFormat('ja-JP', {
+      //   year: 'numeric',
+      //   month: 'short',
+      //   day: '2-digit',
+      //   weekday: 'long',
+      //   hour12: true,
+      //   hour: '2-digit',
+      //   minute: '2-digit',
+      //   second: '2-digit',
+      //   dayPeriod: 'short'
+      // });
+      // console.log(fmt.format(dt));
+
+
+      /** Arrayオブジェクト（値の集合を管理,操作する) **/
+      // 配列を生成する
+      // let list = ['a','b','c'];
+
+      // 要素を追加,削除する
+      let list = ['松','竹','梅'];
+      list.push('桜');
+      console.log(list);
+
 
   </script>
-  
+
 </body>
 </html>
