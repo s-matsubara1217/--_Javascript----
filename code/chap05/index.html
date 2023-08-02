@@ -558,12 +558,45 @@
 
       // 配列ライクなオブジェクトを配列化する
       // Array.fromメソッド
-      let opts = Array.from(document.querySelector('#food').options);
-      console.log(document.querySelector('#food'));
-      console.log(opts);
-      opts.forEach(function(opt) {
-        console.log(opt.value);
-      })
+      // let opts = Array.from(document.querySelector('#food').options);
+      // console.log(document.querySelector('#food'));
+      // console.log(opts);
+      // opts.forEach(function(opt) {
+      //   console.log(opt.value);
+      // })
+
+      // 初期値を持った配列を生成する
+      // let list = Array.from(
+      //   { length: 5 },
+      //   function(value,index) {
+      //     return index * 10;
+      //   }
+      // );
+      // console.log(list);
+
+      // fillメソッド
+      // let data = new Array(5);
+      // data.fill('ー', 0, data.length);
+      // console.log(data);
+
+      // 特定範囲の連番を生成する
+      // const BEGIN = 10;
+      // const END = 20;
+      // const STEP = 3;
+
+      // let list = Array.from(
+      //   { length: (END - BEGIN) / STEP + 1 },
+      //   function(v,i) {
+      //     return BEGIN + (i * STEP)
+      //   }
+      // );
+      // console.log(list);
+
+      // 配列を複製する
+      let list = [1,2,3,4,5];
+      let copy = Array.from(list);
+      console.log(copy);
+      console.log(list === copy);
 
   </script>
 
