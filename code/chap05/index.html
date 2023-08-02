@@ -593,10 +593,35 @@
       // console.log(list);
 
       // 配列を複製する
-      let list = [1,2,3,4,5];
-      let copy = Array.from(list);
-      console.log(copy);
-      console.log(list === copy);
+      // let list = [1,2,3,4,5];
+      // let copy = Array.from(list);
+      // console.log(copy);
+      // console.log(list === copy);
+
+      // 配列を複製するそのほかの方法
+      // スプレッド構文
+      // let list = [1,2,3,4,5];
+      // let copy = [...list]
+      // console.log(list);
+      // console.log(copy);
+      // sliceメソッド
+      // concatメソッド
+
+      // 配列の要素を並び替える
+      // sort,reverse
+      // 並びを逆順
+      // let list = ['い','ろ','は','に','ほ','へ','と'];
+      // console.log(list.reverse());
+      // 辞書順
+      // let list = ['みつば','ねぎ','しょうが','にら','しそ',];
+      // console.log(list.sort());
+      // 数値順
+      let list = [5,25,10];
+      console.log(list.sort(function(m,n) {
+        console.log(`m:${m}`);
+        console.log(`n:${n}`);
+        // return m - n;
+      }));
 
   </script>
 
