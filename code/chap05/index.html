@@ -646,7 +646,40 @@
       // }));
 
       // 配列の内容を順に処理する
-      let list
+      // forEachループを中断する方法
+      // let list = [1,2,null,4,5];
+
+      // try {
+      //   list.forEach(function(value) {
+      //     if(value===null) {
+      //       throw new Error('null値を検出しました。');
+      //     }
+      //     console.log(value);
+      //   });
+      // } catch(e) {
+      //   console.log(e.message);
+      // }
+
+      // thisの内容を変更する
+      // let list = [10,42,null,73,8];
+      // let result = [];
+
+      // list.forEach(function(value) {
+      //   if(value !== null) {
+      //     this.push(value);
+      //   }
+      // },result);
+      // console.log(result);
+
+      // 配列を指定されたルールで加工する
+      // mapメソッド
+      // list.map(function(value,index,array) {
+      //   ...statements...
+      // },thisArg)
+      let list = [2,3,4,5];
+      let result = list.map(function(value,index,array){
+        return value * value;
+      });
 
   </script>
 
