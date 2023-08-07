@@ -703,13 +703,46 @@
       // list.find(function(value,index,array) {
       //   ...statements....
       // },thisArg);
-      let books = [
-        {title: 'TypeScript入門', price: 2948},
-        {title: 'Bootstrapの教科書', price: 2948},
-        {title: '初めてのAndroidアプリ開発', price: 2948},
-        {title: 'TypeScript入門', price: 2948},
-        {title: 'TypeScript入門', price: 2948},
-      ]
+      // let books = [
+      //   {title: 'TypeScript入門', price: 2948},
+      //   {title: 'Bootstrapの教科書', price: 3828},
+      //   {title: 'はじめてのAndroidアプリ開発', price: 3520},
+      //   {title: '基礎から学ぶC#の教科書', price: 3190},
+      //   {title: 'これからはじめるVue.js実践入門', price: 3740},
+      // ];
+      // console.log(books.find(function(value) {
+      //   return value.title.startsWith('Bootstrap');
+      // }));
+      // console.log(books.findIndex(function(value) {
+      //   return value.title.startsWith('Bootstrap');
+      // }));
+
+      // 条件式に合致する要素が存在するかを判定する
+      // some/everyメソッド
+      // some: 条件式に合致する要素が一つでも存在する場合
+      // every: すべての要素が合致する場合
+      // → trueを返す
+      // 【構文】
+      // list.some(function(value,index,array) {
+      //   ...statements...
+      // },thisArg)
+      // let books = [
+      //   {title: 'TypeScript入門', price: 2948},
+      //   {title: 'Bootstrapの教科書', price: 3828},
+      //   {title: 'はじめてのAndroidアプリ開発', price: 3520},
+      //   {title: '基礎から学ぶC#の教科書', price: 3190},
+      //   {title: 'これからはじめるVue.js実践入門', price: 3740},
+      // ];
+      // console.log(books.every(function(value){
+      //   return value.price<3000;
+      // }));
+      // ループの処理を中断する
+      let list = [10,42,null,73,8];
+      list.some(function(value) {
+        if(value===null) {return true;}
+        console.log(value);
+      })
+
 
   </script>
 
