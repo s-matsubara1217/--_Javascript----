@@ -737,12 +737,44 @@
       //   return value.price<3000;
       // }));
       // ループの処理を中断する
-      let list = [10,42,null,73,8];
-      list.some(function(value) {
-        if(value===null) {return true;}
-        console.log(value);
-      })
+      // let list = [10,42,null,73,8];
+      // list.some(function(value) {
+      //   if(value===null) {return true;}
+      //   console.log(value);
+      // })
 
+      // 配列から条件に合致した要素だけを取得する
+      // filterメソッド
+      // 【構文】
+      // list.filter(function(value,index,array) {
+      //   ...statements...
+      // },thisArg);
+      // let books = [
+      //   {title: 'TypeScript入門', price: 2948},
+      //   {title: 'Bootstrapの教科書', price: 3828},
+      //   {title: 'はじめてのAndroidアプリ開発', price: 3520},
+      //   {title: '基礎から学ぶC#の教科書', price: 3190},
+      //   {title: 'これからはじめるVue.js実践入門', price: 3740},
+      // ];
+      // console.log(books.filter(function(value) {
+      //   return value.price < 3500;
+      // }));
+
+      // 配列内の要素を順に処理して1つにまとめる
+      // reduceメソッド
+      // list.reduce(function(result,value,index,array) {
+      //   ...statements...
+      // },initial);
+      // let list = [4,2,8,3];
+      // console.log(list.reduce(function(result,value) {
+      //   return result * value;
+      // }));
+
+      // 右→左方向に演算するreduceRightメソッド
+      let list = [
+        ['ソロ',1],['デュオ',2],['トリオ',3]
+      ]
+      console.log();
 
   </script>
 
