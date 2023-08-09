@@ -771,10 +771,36 @@
       // }));
 
       // 右→左方向に演算するreduceRightメソッド
-      let list = [
-        ['ソロ',1],['デュオ',2],['トリオ',3]
-      ]
-      console.log();
+      // let list = [
+      //   ['ソロ',1],['デュオ',2],['トリオ',3]
+      // ]
+      // console.log(list.reduce(function(result,value) {
+      //   return result.concat(value);
+      // }));
+      // console.log(list.reduceRight(function(result,value) {
+      //   return result.concat(value);
+      // }));
+
+      /***** 連想配列を操作する-Mapオブジェクト *****/
+      // マップを初期化する
+      // 【構文】Mapコンストラクター
+      // new Map([[kew,value], ...])
+      // let data = new Map([
+      //   ['1st','ファースト'],
+      //   ['2nd','セカンド'],
+      //   ['3rd','サード'],
+      // ])
+      // console.log(data);
+
+      let keys = [1,2,3];
+      let values = ['あ','い','う'];
+
+      let data = new Map(
+        keys.map(function(value,index) {
+          return [ value, values[index] ];
+        })
+      );
+      console.log(data);
 
   </script>
 
