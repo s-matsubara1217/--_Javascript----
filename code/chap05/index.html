@@ -792,15 +792,42 @@
       // ])
       // console.log(data);
 
-      let keys = [1,2,3];
-      let values = ['あ','い','う'];
+      // let keys = [1,2,3];
+      // let values = ['あ','い','う'];
 
-      let data = new Map(
-        keys.map(function(value,index) {
-          return [ value, values[index] ];
-        })
-      );
-      console.log(data);
+      // let data = new Map(
+      //   keys.map(function(value,index) {
+      //     return [ value, values[index] ];
+      //   })
+      // );
+      // console.log(data);
+
+      // let data = new Map([
+      //   ['1st','ファースト'],
+      //   ['2nd','セカンド'],
+      //   ['3rd','サード'],
+      // ]);
+      // console.log(data.size);
+
+      // マップの値を設定,取得する
+      // set,getメソッド
+      // 【構文】
+      // dic.set(key,value)
+      // dic.get(key)
+
+      // let data = new Map();
+      // console.log(data);
+      // data.set('壱','1')
+      //     .set('弍','2')
+      //     .set('参','3')
+      //     .set('壱','ー');
+      // console.log(data.get('参'));
+      // console.log(data.get('壱'));
+
+      let data = new Map();
+      data['壱'] = '1';
+      console.log(data['壱']);
+      console.log(data.get('壱'));
 
   </script>
 
